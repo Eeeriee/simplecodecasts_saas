@@ -3,6 +3,7 @@ $(document).ready(function() {
     // Watch for a form submission:
     $("#form-submit-btn").click(function(event) {
         event.preventDefault();
+       
         $('input[type=submit]').prop('disabled', true);
         var error = false;
         var ccNum = $('#card_number').val(),
